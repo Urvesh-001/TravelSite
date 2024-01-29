@@ -1,0 +1,1203 @@
+/* Style for whole web page  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f8ff;
+  /* Font Family for Nunito */
+  font-family: "Gentium Book Plus", serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Style for Navbar  */
+.navbar {
+  max-width: 90%;
+  margin: 1em auto 1em auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar img {
+  width: 4em;
+  cursor: pointer;
+}
+
+.navbar img:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 200ms;
+}
+
+.navbar ol {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.navbar ol a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar ol a li:hover {
+  color: #ff7f04;
+  transition: all ease-in-out 200ms;
+}
+
+.navbar ol li {
+  text-decoration: none;
+  outline-style: none;
+  color: #000;
+  list-style: none;
+}
+
+.search-icon {
+  object-fit: contain;
+  color: #fff;
+}
+
+.search-icon img {
+  width: 1.5em;
+}
+/* Navbar end  */
+
+/* Style for Banner  */
+.title-container {
+  position: relative;
+  max-width: 100%;
+}
+
+.about-title {
+  font-size: 10px;
+}
+
+.title-container p {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 35px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.title-container span {
+  font-weight: 500;
+}
+
+.banner {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.bg {
+  position: absolute;
+  margin-top: 5em;
+  width: 100%;
+}
+
+.background-image {
+  position: absolute;
+  filter: grayscale(100%);
+  max-width: 100%;
+  background-attachment: fixed;
+  /* height: 10vh; */
+  object-fit: cover;
+  margin: 0 auto;
+  top: 18em;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.1;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-right-style: double;
+  z-index: -5;
+}
+/* Banner style end  */
+
+/* Styles for website description  */
+.description {
+  max-width: 100%;
+  text-indent: 5%;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.description img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 3em;
+  box-shadow: 0px 5px 20px 5px #e4e4e4;
+}
+
+.description p {
+  width: 100%;
+  font-weight: 300;
+}
+
+.description span {
+  font-size: 30px;
+  font-weight: bold;
+}
+/* Description end  */
+
+/* Styles for client experiences that is our mission  */
+.mission-container {
+  width: 100%;
+  margin: 5em auto;
+  text-align: center;
+}
+
+.image-container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  overflow-x: auto;
+}
+
+.image-container::-webkit-scrollbar {
+  display: none;
+}
+
+.image-cards {
+  position: relative;
+  padding: 1em;
+  margin-right: 1em;
+}
+
+.card-text {
+  color: black;
+  margin-top: 1em;
+  font-size: x-large;
+  font-weight: bolder;
+  color: #7b02e6;
+  background-image: -webkit-linear-gradient(45deg, #4b0081 30%, #8400ff 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.feedback {
+  margin-top: 1em;
+  font-weight: 350;
+}
+
+.star-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5em;
+}
+
+.star-container img {
+  width: 1.5em;
+}
+
+.mission-container h4 {
+  text-align: left;
+}
+
+.mission-container h1 {
+  margin: 1.5em 0 1em 0;
+  font-weight: 900;
+  background: #ffb76b;
+  background: linear-gradient(
+    to right,
+    #ffb76b 0%,
+    #ffa73d 30%,
+    #ff7c00 60%,
+    #ff7f04 100%
+  );
+  font-size: 30px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mission-container h1:hover {
+  color: #928d96;
+}
+
+.mission {
+  width: 15em;
+  border-radius: 10px;
+  object-fit: contain;
+  box-shadow: 5px 6px 20px 4px #e4e4e4;
+}
+
+.testimonials {
+  width: 100%;
+  text-align: center;
+}
+
+.testimonials h1 {
+  font-weight: 900;
+  margin: 1.5em 0 1em 0;
+}
+
+.testimonials div img {
+  text-align: center;
+  max-width: 50%;
+  margin: 0 auto;
+  object-fit: contain;
+}
+/* Client experiences end  */
+
+/* Styles for accomplishments  */
+.accomplishments-title {
+  margin: 1em 0 2em 0;
+  font-weight: 900;
+  background: #ffb76b;
+  background: linear-gradient(
+    to right,
+    #ffb76b 0%,
+    #ffa73d 30%,
+    #ff7c00 60%,
+    #ff7f04 100%
+  );
+  font-size: 30px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tours-items h1 {
+  font-size: 200;
+  font-weight: 300;
+  color: #ff7c00;
+  margin-top: 0.3em;
+}
+
+.tours-items p {
+  font-size: medium;
+  margin-bottom: 2.5em;
+  font-weight: 300;
+}
+
+.accomplishments div {
+  margin-bottom: 2em;
+}
+
+.accomplishments {
+  position: relative;
+  width: 90%;
+  margin: 2em auto;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f5f5f5;
+  box-shadow: 0px 5px 20px 5px #e4e4e4;
+  padding: 1em 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.mini-circle-1 {
+  position: absolute;
+  background: #ff7f04;
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+  top: -10%;
+  left: -10%;
+  z-index: -2;
+  opacity: 0.1;
+  filter: blur(8px);
+  -webkit-filter: blur(5px);
+}
+
+.mini-circle-2 {
+  position: absolute;
+  background-color: #ff7f04;
+  width: 30em;
+  height: 30em;
+  border-radius: 50%;
+  bottom: -25%;
+  right: -20%;
+  z-index: -2;
+  opacity: 0.1;
+  filter: blur(8px);
+  -webkit-filter: blur(10px);
+}
+
+.mini-sqaure-3 {
+  position: absolute;
+  background: #ff7f04;
+  width: 15em;
+  height: 15em;
+  top: -20%;
+  left: -20%;
+  z-index: -2;
+  opacity: 0.1;
+  transform: rotate(60deg);
+}
+
+.tours-items img {
+  width: 3em;
+  opacity: 0.8;
+}
+
+.line-break {
+  opacity: 0.2;
+  width: 90%;
+  margin: 4em auto;
+}
+
+/* accomplishments end  */
+
+/* Styles for team section  */
+.team-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.team-container h1 {
+  text-align: center;
+  font-weight: 900;
+  margin: 1em;
+  background: #ffb76b;
+  background: linear-gradient(
+    to right,
+    #ffb76b 0%,
+    #ffa73d 30%,
+    #ff7c00 60%,
+    #ff7f04 100%
+  );
+  font-size: 30px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.team img {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.team-container p {
+  width: 100%;
+  margin: 1em 0;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.perks-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.perks-container ul li {
+  margin: 0.5em 0;
+}
+
+.perks-container span {
+  color: #ec7200;
+  font-weight: bold;
+}
+
+.perks-container li {
+  color: rgb(94, 94, 94);
+  font-weight: 350;
+}
+
+.perks-container button {
+  width: 50%;
+  text-align: center;
+  padding: 0.7em 1em;
+  background: transparent;
+  border: none;
+  background-color: #ff7c00;
+  font-weight: bolder;
+  font-size: large;
+  border-radius: 5px;
+  color: #f1f8ff;
+  margin: 1em auto;
+  cursor: pointer;
+}
+/* join section end  */
+
+/* styles for cards  */
+.card-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.card-container h1 {
+  text-align: center;
+  font-weight: 900;
+  margin: 1em;
+  background: #ffb76b;
+  background: linear-gradient(
+    to right,
+    #ffb76b 0%,
+    #ffa73d 30%,
+    #ff7c00 60%,
+    #ff7f04 100%
+  );
+  font-size: 30px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cards {
+  position: relative;
+  margin-top: 3em;
+  background-color: #f0f0f0;
+  box-shadow: 0px 5px 20px 5px #d0d0d0;
+  border: 1.5px solid #ff7c00;
+  padding: 1em;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.cards img {
+  width: 3em;
+  margin: 2em 0;
+}
+
+.cards h2 {
+  margin: 0 0 1.5em 0;
+  color: #ff7f04;
+}
+
+.cards p {
+  width: 80%;
+  margin: 0 auto 2em auto;
+  font-weight: 300;
+}
+/* Cards end  */
+
+/* Styles for social media icons  */
+.social-media-container figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.social-media-container figcaption {
+  margin: 1em 0;
+}
+
+.logo-images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.logo-images a {
+  padding: 0 1em;
+  margin: 1em 0;
+}
+
+.logo-images a img {
+  width: 30px;
+}
+/* Social media icons end  */
+
+/* Styles for footer  */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em;
+}
+
+.policies a {
+  margin: 1em 1em;
+  text-decoration: none;
+  color: rgb(132, 132, 132);
+}
+
+.footer-container p {
+  margin-top: 1.5em;
+  font-weight: 300;
+  margin-bottom: 0.5em;
+  color: #ff932d;
+}
+/* Footer end  */
+
+/* Styles for small mobile devices  */
+@media only screen and (min-width: 320px) {
+  /* Style for Banner  */
+  .title-container p {
+    width: 90%;
+  }
+
+  /* Style for Navbar  */
+  .navbar {
+    max-width: 90%;
+    margin: 1em auto 1em auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    padding: 0.5em 0;
+  }
+
+  .navbar ol {
+    width: 80%;
+  }
+
+  .navbar img {
+    width: 2em;
+  }
+
+  .navbar ol a li {
+    font-size: 12px;
+  }
+
+  .search-icon img {
+    width: 1em;
+  }
+
+  /* Style for description  */
+  .description img {
+    max-width: 80%;
+    margin-top: 1em;
+  }
+
+  .description p {
+    width: 80%;
+    margin-top: 4em;
+  }
+
+  /* style for background  */
+  .bg {
+    position: absolute;
+    margin-top: 0em;
+    width: 100%;
+  }
+
+  .background-image {
+    /* top: 30em; */
+    opacity: 0.1;
+  }
+
+  /* Style for mission container  */
+  .mission-container {
+    margin: 2em auto;
+  }
+
+  .image-container {
+    max-width: 85%;
+  }
+
+  /* Style for accomplishments */
+  .accomplishments {
+    width: 85%;
+  }
+
+  .accomplishments-title {
+    margin: 0.5em 0 2em 0;
+  }
+
+  .tours-items img {
+    width: 2em;
+  }
+
+  .team-container {
+    width: 85%;
+  }
+
+  /* Style for cards  */
+
+  .card-container {
+    width: 85%;
+  }
+
+  .cards img {
+    width: 3em;
+    margin: 2em 0;
+  }
+
+  .cards h2 {
+    font-size: 25px;
+  }
+
+  .cards p {
+    width: 80%;
+    margin: 0 auto 2em auto;
+    font-weight: 300;
+  }
+
+  /* Style for social media icons  */
+  .logo-images {
+    justify-content: center;
+  }
+
+  /* style for footer  */
+  .footer-container p {
+    text-align: center;
+  }
+}
+
+/* Styles for tablet and larger smartphones view  */
+@media only screen and (min-width: 481px) {
+  /* Navbar styles  */
+  .navbar {
+    max-width: 90%;
+  }
+
+  .navbar ol {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  /* Banner styles  */
+  .title-container h1 {
+    font-size: 60px;
+  }
+
+  .banner {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .bg {
+    margin-top: -12em;
+  }
+
+  .background-image {
+    width: 100%;
+    top: 10em;
+  }
+
+  /* Styles for team container  */
+  .team-container {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .team img {
+    margin: 0 auto;
+  }
+
+  .team-container h1 {
+    text-align: center;
+  }
+
+  .team p {
+    text-align: center;
+  }
+
+  .team-perks {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Styles for description  */
+  .description {
+    width: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .description img {
+    width: 70%;
+    border-radius: 10px;
+    margin-top: 2em;
+  }
+
+  .description p {
+    width: 90%;
+    margin-top: 0em;
+  }
+
+  .tours-items {
+    flex-direction: column;
+  }
+
+  .perks-container {
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .perks-container p {
+    text-align: center;
+  }
+
+  .perks-container ul li {
+    max-width: 100%;
+  }
+
+  .perks-container button {
+    width: 30%;
+  }
+
+  /* Styles for cards  */
+  .card-container {
+    width: 70%;
+  }
+
+  .cards img {
+    width: 3.5em;
+    margin: 2em 0;
+  }
+
+  .cards h2 {
+    font-size: 30px;
+  }
+
+  .cards p {
+    width: 80%;
+    margin: 0 auto 2em auto;
+    font-weight: 300;
+  }
+
+  /* Styles for social media icons  */
+
+  .social-media-container {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .social-media-container figure {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .social-media-container figcaption {
+    margin: 1em 0;
+  }
+}
+
+/* Styles for tablet, small desktop landscape view  */
+@media only screen and (min-width: 768px) {
+  /* Styles for banner  */
+  .title-container p {
+    font-size: 75px;
+  }
+
+  .banner {
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .bg {
+    margin-top: -1em;
+  }
+
+  .background-image {
+    max-width: 100%;
+    top: -20em;
+    height: 125vh;
+    opacity: 0.2;
+  }
+
+  /* Style for navbar  */
+
+  .navbar ol a li {
+    font-size: 15px;
+  }
+
+  /* Styles for description  */
+  .description {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .description img {
+    width: 40%;
+    border-radius: 10px;
+  }
+
+  .description p {
+    width: 50%;
+    margin-left: 2em;
+  }
+
+  .mission-container h1 {
+    font-size: 35px;
+  }
+
+  .team-container {
+    width: 100%;
+  }
+
+  .team-container h1 {
+    font-size: 45px;
+  }
+
+  .team {
+    display: flex;
+    justify-content: center;
+  }
+
+  .team img {
+    width: 90%;
+    object-fit: contain;
+    background-color: antiquewhite;
+  }
+
+  .team-perks {
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .perks-container {
+    width: 200%;
+  }
+
+  .perks-container p {
+    margin-top: 2em;
+  }
+
+  .perks-container ul li {
+    width: 70%;
+    margin: 0.7em auto;
+  }
+
+  .perks-container button {
+    margin-top: 2em;
+    width: 20%;
+  }
+
+  .perks-container button:hover {
+    background-color: #ec7200;
+    transform: scale(0.9);
+    transition: all ease-in-out 250ms;
+  }
+
+  /* Styles for accomplishments */
+
+  .accomplishments {
+    position: relative;
+    width: 90%;
+    margin: 2em auto;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f5f5f5;
+    box-shadow: 0px 5px 20px 5px #d0d0d0;
+    padding: 1em 0;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  .accomplishments-title {
+    font-size: 35px;
+  }
+
+  .team-container h1 {
+    font-size: 35px;
+  }
+
+  .tours-items {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .tours-items h1 {
+    margin-bottom: 0.2em;
+    font-weight: 500;
+    font-size: 35px;
+  }
+
+  .tours-items img {
+    width: 3.5em;
+    margin-bottom: 1em;
+  }
+
+  /* Styles for background circles  */
+
+  .mini-circle-1 {
+    position: absolute;
+    background: rgb(110, 0, 207);
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    top: -10%;
+    left: -10%;
+    z-index: -2;
+    opacity: 0.2;
+  }
+
+  /* Styles for background circles  */
+  .mini-circle-1 {
+    background: #ff7f04;
+  }
+  /* Styles for background circles  */
+  .mini-circle-2 {
+    background: #ff7f04;
+  }
+
+  /* Styles for cards  */
+  .card-container {
+    width: 85%;
+  }
+
+  .card-container h1 {
+    font-size: 35px;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2em;
+  }
+
+  .cards img {
+    width: 3.5em;
+    margin: 2em 0;
+  }
+
+  .cards h2 {
+    font-size: 30px;
+  }
+
+  .cards p {
+    width: 80%;
+    margin: 0 auto 2em auto;
+    font-weight: 300;
+  }
+
+  /* Styles for social media icons  */
+
+  .social-media-container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .social-media-container figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .social-media-container figcaption {
+    margin: 1em 0;
+  }
+
+  .logo-images {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  .logo-images a {
+    padding: 0 1em;
+    margin: 1em 0;
+  }
+
+  .logo-images a img {
+    width: 30px;
+  }
+}
+
+/* styles for large desktop  */
+@media only screen and (min-width: 1280px) {
+  /* Navbar styling */
+
+  .navbar {
+    max-width: 90%;
+    margin: 1em auto 1em auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar img {
+    width: 4em;
+    cursor: pointer;
+  }
+
+  .navbar img:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out 200ms;
+  }
+
+  .navbar ol {
+    width: 50%;
+
+    justify-content: space-evenly;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .navbar ol a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .navbar ol a li:hover {
+    color: #ff7f04;
+    transition: all ease-in-out 200ms;
+  }
+
+  .navbar ol li {
+    text-decoration: none;
+    outline-style: none;
+    color: #000;
+    list-style: none;
+  }
+
+  .search-icon {
+    object-fit: contain;
+    color: #fff;
+  }
+
+  .search-icon img {
+    width: 1.5em;
+  }
+
+  /* Styles for team container  */
+  .team-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .team-perks {
+    flex-direction: row;
+  }
+
+  /* Styles for background and banner image  */
+  .bg {
+    margin-top: -25em;
+  }
+
+  .background-image {
+    width: 100%;
+    top: 10em;
+  }
+
+  /* Styles for description  */
+  .description {
+    width: 70%;
+  }
+
+  .description img {
+    width: 35%;
+    border-radius: 10px;
+  }
+
+  .description p {
+    width: 55%;
+  }
+
+  /* Styles for client experiences  */
+  .mission-container {
+    margin-top: 8em;
+  }
+
+  .image-cards img:hover {
+    transform: scale(1.05);
+    transition-timing-function: linear;
+    transition: all 500ms;
+    cursor: pointer;
+  }
+
+  .feedback {
+    margin: 1em auto 0 auto;
+    text-align: center;
+    align-items: center;
+  }
+
+  .perks-container {
+    width: 350%;
+  }
+
+  .team {
+    display: block;
+  }
+
+  .perks-container ul li {
+    width: 100%;
+    margin: 0.7em auto;
+  }
+
+  .perks-container p {
+    text-align: left;
+  }
+
+  .perks-container button {
+    width: 10em;
+  }
+
+  .tours-items {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* Styles for accomplishments  */
+  .accomplishments {
+    margin-top: 5em;
+  }
+
+  .tours-items {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  /* Style for cards  */
+  .card-container {
+    width: 60%;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 0em;
+    grid-column-gap: 2em;
+  }
+
+  .cards img {
+    width: 4em;
+    margin: 2em 0;
+  }
+
+  .cards h2 {
+    font-size: 30px;
+  }
+
+  .cards p {
+    width: 80%;
+    margin: 0 auto 2em auto;
+    font-weight: 300;
+  }
+}
